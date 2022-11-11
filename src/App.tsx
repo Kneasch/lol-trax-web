@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import apiClient from './api/apiClient';
 import PlayerMasteries from './components/PlayerMasteries';
 import PlayerSearch from './components/PlayerSearch';
+import Logo from './icons/Logo';
 import IChampion from './interfaces/api/IChampion';
 import ISummoner from './interfaces/api/ISummoner';
 import IChampionMasteryExtended from './interfaces/data/IChampionMasteryExtended';
@@ -58,6 +59,7 @@ const App = (props: IAppProps): JSX.Element => {
 
     return (
         <div className='app'>
+            <Logo color={'white'} size={75} />
             <PlayerSearch setSummoner={setSummoner} regionCode={regionCode} />
             {
                 championMasteries && championMasteries.length > 0 &&
