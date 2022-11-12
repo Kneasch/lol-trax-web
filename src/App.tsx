@@ -69,6 +69,8 @@ const App = (props: IAppProps): JSX.Element => {
                     <PlayerMasteries championMasteries={championMasteries.filter(x => x.championLevel === 5).sort((a, b) => b.championLevel - a.championLevel)} />
                     <PlayerMasteries championMasteries={championMasteries.filter(x => x.championLevel === 4).sort((a, b) => b.championLevel - a.championLevel)} />
                     <PlayerMasteries championMasteries={championMasteries.filter(x => x.championLevel === 3).sort((a, b) => b.championLevel - a.championLevel)} />
+                    <PlayerMasteries championMasteries={championMasteries.filter(x => x.championLevel === 2).sort((a, b) => b.championLevel - a.championLevel)} />
+                    <PlayerMasteries championMasteries={championMasteries.filter(x => x.championLevel === 1).sort((a, b) => b.championLevel - a.championLevel)} />
                 </>
             }
         </div>
